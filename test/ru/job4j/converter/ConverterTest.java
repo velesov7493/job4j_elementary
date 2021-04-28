@@ -16,7 +16,8 @@ public class ConverterTest {
 
     @Test
     public void whenConvert360RubleTo6Dollars() {
-        int in = 360; int expected = 6;
+        int in = 360;
+        int expected = 6;
         int real = Converter.rubleToDollar(in);
         Assert.assertEquals(expected, real);
     }

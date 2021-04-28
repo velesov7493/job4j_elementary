@@ -20,7 +20,7 @@ public class PointTest {
 
     @Test
     public void when12tom20thenSqrt13() {
-        double expected = Math.sqrt(13);
+        double expected = 3.605;
         int x1 = 1;
         int y1 = 2;
         int x2 = -2;
@@ -31,7 +31,7 @@ public class PointTest {
 
     @Test
     public void when34to11thenSqrt13() {
-        double expected = Math.sqrt(13);
+        double expected = 3.605;
         int x1 = 3;
         int y1 = 4;
         int x2 = 1;
@@ -42,7 +42,7 @@ public class PointTest {
 
     @Test
     public void when00to11thenSqrt2() {
-        double expected = Math.sqrt(2);
+        double expected = 1.414;
         int x1 = 0;
         int y1 = 0;
         int x2 = 1;

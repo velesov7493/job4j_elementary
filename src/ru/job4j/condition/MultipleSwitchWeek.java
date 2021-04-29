@@ -20,7 +20,10 @@ public class MultipleSwitchWeek {
         System.out.println(numberOfDay("Monday"));
         System.out.println(numberOfDay("Вторник"));
         System.out.println(numberOfDay("Tuesday"));
+        System.out.println(numberOfDay("Четверг"));
+        System.out.println(numberOfDay("Thursday"));
         System.out.println(numberOfDay("Воскресение"));
+        System.out.println(numberOfDay("Sunday"));
         System.out.println(numberOfDay("Synday"));
     }
 }

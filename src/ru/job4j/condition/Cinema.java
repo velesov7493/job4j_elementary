@@ -11,10 +11,20 @@ public class Cinema {
         }
     }
 
+    private static void permission(boolean allowByParent, boolean hasMoney) {
+        boolean result = allowByParent && hasMoney;
+        if (result) {
+            System.out.println("Я могу пойти в кинотеатр.");
+        } else {
+            System.out.println("Я не могу пойти в кинотеатр.");
+        }
+    }
+
     public static void main(String[] args) {
-        access(21);
-        access(16);
-        access(18);
+        permission(true, true);
+        permission(true, false);
+        permission(false, true);
+        permission(false, false);
     }
 
 }

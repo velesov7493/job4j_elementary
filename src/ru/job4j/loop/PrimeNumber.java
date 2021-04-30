@@ -12,4 +12,12 @@ public class PrimeNumber {
         }
         return prime;
     }
+
+    public static int calc(int finish) {
+        int count = 0;
+        for (int number = 1; number <= finish; number++) {
+            count += check(number) ? 1 : 0;
+        }
+        return count;
+    }
 }

@@ -3,15 +3,12 @@ package ru.job4j.loop;
 public class Board {
 
     public static void paint(int width, int height) {
-        // Шестнодцатиричные коды
-        // требуемых UNICODE-символов псевдографики
         char whiteChar = 0x2591;
         char blackChar = 0x2588;
 
         for (int i = 0; i < width; i++) {
             for (int j = 0; j < height; j++) {
-                int s = (i + j) % 2;
-                if (s == 0) {
+                if ((i + j) % 2 == 0) {
                     System.out.print(blackChar);
                 } else {
                     System.out.print(whiteChar);

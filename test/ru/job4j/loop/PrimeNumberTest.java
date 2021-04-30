@@ -21,15 +21,11 @@ public class PrimeNumberTest {
         Assert.assertFalse(result);
     }
 
-    // Этот тест пришлось поправить,
-    // Потому что 1 - тоже простое число
-
     @Test
     public void when1() {
         int number = 1;
         boolean result = PrimeNumber.check(number);
-        //Assert.assertFalse(result);
-        Assert.assertTrue(result);
+        Assert.assertFalse(result);
     }
 
 }

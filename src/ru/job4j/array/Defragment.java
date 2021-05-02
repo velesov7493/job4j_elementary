@@ -28,9 +28,8 @@ public class Defragment {
                 int notNullPoint = indexOfNotNullAfter(array, index + 1);
                 if (notNullPoint < 0) {
                     break;
-                } else {
-                    exchange(array, index, notNullPoint);
                 }
+                exchange(array, index, notNullPoint);
             }
         }
         return array;

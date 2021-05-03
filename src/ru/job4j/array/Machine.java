@@ -9,11 +9,11 @@ public class Machine {
         int[] result = new int[100];
         int size = 0;
         int change = money - price;
-        for (int i = 0; i < coins.length; i++) {
-            int count = change / coins[i];
-            change -= coins[i] * count;
+        for (int nominal : coins) {
+            int count = change / nominal;
+            change %= nominal;
             while (count > 0) {
-                result[size] = coins[i];
+                result[size] = nominal;
                 size++;
                 count--;
             }

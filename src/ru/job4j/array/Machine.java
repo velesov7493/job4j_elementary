@@ -13,8 +13,7 @@ public class Machine {
             int count = change / nominal;
             change %= nominal;
             while (count > 0) {
-                result[size] = nominal;
-                size++;
+                result[size++] = nominal;
                 count--;
             }
         }

@@ -13,7 +13,6 @@ public class AlgoArray {
         exchange(array, 3, 0);
         exchange(array, 1, 2);
         exchange(array, 3, 4);
-
         for (int val : array) {
             System.out.println(val);
         }

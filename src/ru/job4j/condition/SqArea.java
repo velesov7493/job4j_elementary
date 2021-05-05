@@ -7,8 +7,4 @@ public class SqArea {
         double l = h * k;
         return l * h;
     }
-
-    public static void main(String[] args) {
-        System.out.println("Площадь прямоугольника");
-    }
 }
